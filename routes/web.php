@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/importdata', 'DummyController@importdata')->name('importdata');
+Route::post('/import', 'DummyController@import')->name('import');

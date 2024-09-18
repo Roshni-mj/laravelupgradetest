@@ -13,6 +13,7 @@ use App\Participanttochapter;
 use CountryState; // to access countries and states.
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Excel;
 
 class ApiUsersController extends Controller
 {
