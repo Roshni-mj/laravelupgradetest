@@ -1,19 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Dummy;
 use Illuminate\Http\Request;
 use DB;
 use Excel;
 use File;
 class DummyController extends Controller
 {
-    public function importdata() {
-       
+    public function importdata() 
+    {
         return view('importdata');
     }
-    public function import(Request $request) {
-
+    public function import(Request $request) 
+    {
         //validate the xls file
         $this->validate($request, array(
             'file' => 'required'
@@ -27,9 +27,6 @@ class DummyController extends Controller
 
                 $path = $request->file->getRealPath();
 
-                // $data = Excel::load($path, function($reader) {
-                // })->get();
-                // dd($data);
                 $excel = Excel::load($path)->all()->toArray();
 
                 if (!empty($excel) && count($excel)) {
