@@ -5,3 +5,14 @@ Client Secret: 35wh5bb2gEBebzWvMAVpUvZbg0BkcoIBFfwZHqbw
 Password grant client created successfully.
 Client ID: 2
 Client Secret: fDF5VRqT3pUnSI1hyk4uSl2zENrRKGY1RrNmZtyc
+
+
+
+PS C:\wamp64\www\lab\laravelupgradetest> php artisan passport:install
+Encryption keys already exist. Use the --force option to overwrite them.
+Personal access client created successfully.
+Client ID: 3
+Client secret: Zpz6pswRwSSMWz2iZtxkw7OJbMOr1jLY2dydCqt9
+Password grant client created successfully.
+Client ID: 4
+Client secret: O0lf4dGSdJpIKrMZ0Hv81DpjrKRlON8pN96nlyAG
