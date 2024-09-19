@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Dummy;
+use App\Imports\DummyImport;
 use Illuminate\Http\Request;
 use DB;
 use Excel;
@@ -27,6 +28,12 @@ class DummyController extends Controller
 
                 $path = $request->file->getRealPath();
 
+                Excel::import(new DummyImport, $path);
+
+                return redirect()->route('importdata')
+                                            ->with('success', 'Your Data has successfully imported');
+
+                /*
                 $excel = Excel::load($path)->all()->toArray();
 
                 if (!empty($excel) && count($excel)) {
@@ -58,6 +65,7 @@ class DummyController extends Controller
                         }
                     }
                 }
+                */
 
                 return back();
             } else {
