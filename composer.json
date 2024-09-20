@@ -5,15 +5,15 @@
     "license": "MIT",
     "type": "project",
 "require": {
-        "php": "^8.0.2",
-        "doctrine/dbal": "*",
+        "php": "^8.1.0",
+        "doctrine/dbal": "3.0",
         "dougsisk/laravel-country-state": "^4.0",
         "guzzlehttp/guzzle": "^6.5|^7.0.1",
-        "laravel/framework": "^9.0",
+        "laravel/framework": "^10.0",
         "laravel/helpers": "^1.7",
-        "laravel/passport": "^10.0",
+        "laravel/passport": "^12.3",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^3.0",
+        "laravel/ui": "^4.0",
         "lcobucci/jwt": "^4.0",
         "maatwebsite/excel": "^3.1",
         "paragonie/random_compat": "~2.0",
@@ -22,12 +22,12 @@
         "symfony/mailgun-mailer": "^7.1"
     },
 "require-dev": {
-    "spatie/laravel-ignition": "^1.0",
+    "spatie/laravel-ignition": "^2.0",
     "filp/whoops": "^2.8",
    "fakerphp/faker": "^1.9",
     "mockery/mockery": "^1.0",
-    "nunomaduro/collision": "^6.1",
-    "phpunit/phpunit": "^9.0"
+    "nunomaduro/collision": "^7.0",
+    "phpunit/phpunit": "^10.0"
 },
     "autoload": {
         "classmap": [
@@ -43,14 +43,14 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "extra": {
         "laravel": {
             "dont-discover": [
             ]
         }
-        
+
     },
     "scripts": {
         "post-root-package-install": [
