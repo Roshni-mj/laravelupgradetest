@@ -5,27 +5,28 @@
     "license": "MIT",
     "type": "project",
 "require": {
-        "php": "^7.3.0",
-        "dmcbrn/laravel-email-database-log": "^5.3",
+        "php": "^8.0.2",
         "doctrine/dbal": "*",
-        "dougsisk/laravel-country-state": "^3",
-        "fideloper/proxy": "^4.4",
+        "dougsisk/laravel-country-state": "^4.0",
         "guzzlehttp/guzzle": "^6.5|^7.0.1",
-        "laravel/framework": "^8.0",
+        "laravel/framework": "^9.0",
         "laravel/helpers": "^1.7",
         "laravel/passport": "^10.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^3.0",
-        "lcobucci/jwt": "^3.3",
-        "maatwebsite/excel": "3.1.40",
-        "paragonie/random_compat": "~2.0"
+        "lcobucci/jwt": "^4.0",
+        "maatwebsite/excel": "^3.1",
+        "paragonie/random_compat": "~2.0",
+        "spatie/laravel-permission": "~5.0",
+        "symfony/http-client": "^7.1",
+        "symfony/mailgun-mailer": "^7.1"
     },
 "require-dev": {
-    "facade/ignition": "^2.3.6",
+    "spatie/laravel-ignition": "^1.0",
     "filp/whoops": "^2.8",
-    "fzaninotto/faker": "^1.9.1",
+   "fakerphp/faker": "^1.9",
     "mockery/mockery": "^1.0",
-    "nunomaduro/collision": "^5.0",
+    "nunomaduro/collision": "^6.1",
     "phpunit/phpunit": "^9.0"
 },
     "autoload": {
@@ -42,6 +43,8 @@
             "Tests\\": "tests/"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "dont-discover": [
