@@ -275,15 +275,15 @@ return [
     | Supported handlers: null|db
     |
     */
-    // 'transactions' => [
-    //     'handler' => 'db',
-    //     'db'      => [
-    //         'connection' => null,
-    //     ],
-    // ],
     'transactions' => [
-    'handler' => null,
-],
+        'handler' => 'db',
+        'db'      => [
+            'connection' => null,
+        ],
+    ],
+//     'transactions' => [
+//     'handler' => null,
+// ],
 
     'temporary_files' => [
 
